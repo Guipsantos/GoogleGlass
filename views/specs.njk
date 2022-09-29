@@ -1,0 +1,44 @@
+{% extends "layout.njk" %}
+{% block content %}
+    <section id="corpo-full">
+        <article id="noticia-principal">
+            <header id="cabecalho-artigo">
+                <hgroup>
+                    <h3>Glass > Especificações</h3>
+                    <h1>Raio-X no Google Glass</h1>
+                    <h2>por Gustavo Guanabara</h2>
+                    <h3 class="dir">Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
+
+            <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+            <section id="conteudo">
+                <img src="_imagens/glass-esquema-marcado.jpg"usemap="#meumapa"/>
+                <button type="button" id="specs-camera" onclick="specs('_imagens/det-camera.jpg','Câmera', 'Filme e fotografe a qualquer momento', 'Com o Google Glass será possível tirar fotos com até 5 megapixels e gravar vídeos com 720 linhas de resolução. Os primeiros vídeos e fotos capturados com o aparelho já começaram a circular pela rede, mas até agora ninguém tem muitas informações técnicas.')" ></button>
+                <button type="button" id="specs-gadgets" onclick="specs('_imagens/det-bateria.jpg','Bateria e Gadgets', 'Quais são os dispositivos que complementam o Glass', 'Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.')"></button>
+                <button type="button" id="specs-tela" onclick="specs('_imagens/det-tela.jpg','Tela', 'Como o mundo vai aparecer', 'De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça.')"></button>
+                <button type="button" id="specs-sensores" onclick="specs('_imagens/det-touch.jpg','Sensores', 'A sensibilidade de um simples óculos','Quem pensa que para comandar o Google Glass vai precisar de teclado e mouse, se engana redondamente. O dispositivo vem com vários tipos de sensores e microfones embutidos. Assim, para dar um comando, basta falar ou passar o dedo na lateral do óculos.')"></button>
+
+                <article id="iframe">
+                    <header> 
+                        <h1 id="topo"></h1>
+                        <h2 id="contem">Clique sobre as áreas destacadas em vermelho</h2>
+                        <p id="pe"></p>
+                    </header>
+                    <img id="tela" class="img-dir" src="_imagens/mao.png" alt="Mão apontando para a esquerda"/>
+                </article>
+
+             <!--   
+                <map name="meumapa"> 
+                <area shape="poly" coords="183,219,266,208,266,243,185,257" href="googleglass.njk#tela" target="janela"/>
+                <area shape="circle" coords="157,244,12" href="googleglass.njk#camera" target="janela"/>
+                <area shape="circle" coords="76,51,12" href="googleglass.njk#gadgets" target="janela"/>
+                <area shape="poly" coords="29,146,81,216,82,249,28,169" href="googleglass.njk#sensores" target="janela"/>
+                </map>
+                <iframe  src="googleglass.njk" name="janela" id="frame-spec"  scrolling="no"></iframe>
+             -->
+            </section>
+        </article>
+    </section>
+{% endblock content%}

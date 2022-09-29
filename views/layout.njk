@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tudo sobre Google Glass</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="scripts.js"></script>
+    </head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+
+            <img id="icone" src="_imagens/glass-oculos-preto-peq.png"/>
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="/index">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="/specs">Especificações</a></li>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="/fotos">Fotos</a></li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="/multimidia">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="/faleconosco">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        {% block content %}	{% endblock content %}
+
+        <footer id="rodape">
+            <p>Copyright &copy; 2013 - by Gustavo Guanabara <br/>
+            <a href="http://facebook.com/cursosemvideo" target="blank"> Facebook </a> | 
+            <a href="http://twitter.com/cursosemvideo" target="blank"> Twitter</a> </p>
+        </footer>
+    </div>
+
+    
+</body>
+</html>

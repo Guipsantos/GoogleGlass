@@ -1,0 +1,548 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+body{
+	font-family: Arial, sans-serif;
+	background-color: #dddddd;
+	color: rgba(0, 0, 0, 1);
+	
+}
+		
+div#interface {
+	width: 1300px;
+	background-color: #ffffff;
+	margin: -20px 0px 0px 0px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	padding: 10px;
+}	
+		
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+
+a{
+	color:#606060;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+header#cabecalho img#icone {
+	position: absolute;
+	top: 80px;
+	left: 970px;
+}			 
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#cabecalho h1 {
+	font-family: FonteLogo, sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif; 
+	color: #888888;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img {
+	width: 100%;
+	height: 100%;
+}
+figure.foto-legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	transition:opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+	opacity: 1;
+}
+
+/* Formatação do Menu*/
+
+nav#menu {
+	display: block;
+	
+}
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 560px;
+}
+
+nav#menu li {
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+nav#menu li:hover {
+	background-color: #60606060 ;
+	
+	
+}
+
+nav#menu h1 {
+	display: none;
+}
+
+nav#menu a {
+	color: #000000;
+	text-decoration: none;
+	
+}
+
+nav#menu a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+
+section#corpo {
+	display: block;
+	width: 600px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+
+article#noticia-principal h2{
+	font-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1{
+	font-family: 'FonteLogo' , sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+header#cabecalho-artigo h2{
+	font-size: 13pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+	font-size: 12pt;
+	color: #606060;
+	
+}
+
+.dir{
+	text-align: right;
+}
+
+img.img-dir{
+			display: block;
+			float: right;
+			margin-left: 5px;
+		}
+
+table#tabelaspec {
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+table#tabelaspec td {
+	border: 1px solid #606060;
+	padding: 10px;
+}
+
+table#tabelaspec td.ce{
+	color: #ffffff;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+table#tabelaspec td.cd{
+	background-color: #cecece;
+	
+}
+
+table#tabelaspec caption{
+	color:#888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+
+table#tabelaspec caption span{
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+
+aside#lateral {
+	display: block;
+	width: 600px;
+	float: right;
+	background-color:#dddddd;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba( 0, 0, 0, 0.5);
+}
+
+aside#lateral h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+}
+
+aside#lateral h2 {
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+	padding: 5px;
+}
+
+video#filme2 {
+	width: 400px;
+	display: block;
+	position: relative;
+	left: 100px;
+}
+
+video#filme1 {
+	width: 400px;
+	display: block;
+	position: relative;
+	left: 60px;
+	top: -10px;
+}
+
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+	text-align: center;
+}
+	
+/* FORM bb*/
+
+form {
+	width: 500px;
+	margin: auto;
+}
+
+input, textarea {
+	font-family: sans-serif;
+	font-size: 13pt;
+	font-weight: normal;
+	background-color: rgba(255, 255, 255, .8);
+}
+
+input:hover, textarea:hover {
+	background-color: #dddddd;
+}
+
+legend {
+	color: #888888;
+	font-weight: bold;
+	font-size: 13pt;
+	font-family: sans-serif;
+}
+
+fieldset {
+	border-color: #cecece;
+	margin: 20px;
+}
+
+fieldset#sexo {
+	width: 150px;
+}
+
+fieldset#usuario {
+	background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+}
+
+fieldset#endereço {
+	background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+}
+
+fieldset#mensagem {
+	background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+}
+
+fieldset#pedido {
+	background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
+}
+
+/* FOTOS */
+
+ul#album-fotos {
+	width: 700px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+	
+}
+
+ul#album-fotos li {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: 5px solid #ffffff;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0.4);
+	
+}
+
+ul#album-fotos li span {
+	opacity: 0;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,.3);
+	font-size: 9pt;
+	line-height: 370px;
+	padding: 5px;
+	
+}
+
+ul#album-fotos li:hover span{
+	opacity: 1;
+	
+}
+
+ul#album-fotos li#foto01 {
+	background: url('../_imagens/galeria-01.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto02 {
+	background: url('../_imagens/galeria-02.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto03 {
+	background: url('../_imagens/galeria-03.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto04 {
+	background: url('../_imagens/galeria-04.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto05 {
+	background: url('../_imagens/galeria-05.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto06 {
+	background: url('../_imagens/galeria-06.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+
+ul#album-fotos li:hover{
+	transform: scale(1.5);
+	transition: all 0.4s ease-in;
+}
+ul#album-fotos li#foto01:hover{
+	background-position: 0px 0px;
+	background-size: 200px 200px;	
+}
+
+ul#album-fotos li#foto02:hover{
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto03:hover{
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto04:hover{
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto05:hover{
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto06:hover{
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+/* MEDIA */
+
+div#tv-radio {
+	width: 900px;
+	height: 580px;
+	margin: auto;
+	background: url("../_imagens/radio-tv.png") no-repeat;
+}
+
+audio#musica {
+	display: block;
+	position: relative;
+	left: 574px;
+	top: 488px;
+	width: 300px;
+}
+video#filme {
+	display: block;
+	position: relative;
+	left: 83px;
+	top: 70px;
+	width: 450px;
+}
+
+/* SPECS */
+
+section#conteudo {
+	width: 1000px;
+	margin: auto;
+}
+
+#iframe {
+	display: block;
+	position: relative;
+	bottom: 340px;
+	left: 580px;
+	width: 380px;
+	height: 380px;
+	border: none;
+	overflow: hidden;
+}
+
+iframe#frame-spec::-webkit-scrollbar  {
+	display: none;
+}
+
+#conteudo article h1{
+	font-size: 15pt;
+	color: #ffffff;
+	background-color: rgba( 0, 0, 0, .3);
+	padding: 5px;
+	margin: 0px;
+}
+#conteudo article h2{
+	font-size: 13pt;
+	color: #888888;
+	margin: 0px;
+}
+#conteudo article p {
+	text-align: justify;
+	text-indent: 20px;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+.tela-specs {
+	display: block;
+	position: relative;
+	bottom: 280px;
+	left: 580px;
+	width: 380px;
+	height: 280px;
+	border: none;
+	overflow: hidden;
+}
+
+#specs-camera {
+	display: block;
+	position: relative;
+	left: 148px;	
+	bottom: 50px;
+	background-color: #fd9292;
+	border-radius: 50%;
+	border-color: #ffffffe7;
+	height: 20px;
+	width: 20px;
+}
+#specs-gadgets {
+	display: block;
+	position: relative;
+	left: 67px;	
+	bottom: 262px;
+	background-color: #fd9292;
+	border-radius: 50%;
+	border-color: #ffffffe7;
+	height: 20px;
+	width: 20px;
+}
+#specs-tela {
+	display: block;
+	position: relative;
+	left: 184px;	
+	bottom: 110px;
+	background-color: #fd9292;
+	border-color: #ffffffe7;
+	height: 35px;
+	width: 85px;
+	transform: rotate(-8deg) skew(-4deg);
+}
+
+#specs-sensores {
+	display: block;
+	position: relative;
+	left: 10px;	
+	bottom: 170px;
+	background-color: #fd9292;
+	border-color: #ffffffe7;
+	height: 17px;
+	width: 89px;
+	transform: rotate(53deg) skew(52deg);
+}
+
