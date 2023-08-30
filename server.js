@@ -23,19 +23,19 @@ server.get("/index", function(req,res) {
 })
 
 server.get("/fotos", function(req,res) {
-    return res.render("fotos", { item: videos })
+    return res.render("fotos")
 })
 
 server.get("/specs", function(req,res) {
-    return res.render("specs", { item: videos })
+    return res.render("specs")
 })
 
 server.get("/googleglass", function(req, res) {
-    return res.render("googleglass", {item: videos})
+    return res.render("googleglass")
 })
 
 server.get("/multimidia", function(req,res) {
-    return res.render("multimidia", { item: videos })
+    return res.render("multimidia")
 })
 
 server.get("/", function(req, res){
@@ -48,21 +48,7 @@ server.get("/", function(req, res){
 })
 
 server.get("/faleconosco", function(req, res){
-    return res.render("faleconosco", { items: videos })
-})
-
-server.get("/video", function(req, res) {
-    const id = req.query.id 
-
-    const video = videos.find(function(video) {
-        return video.id == id
-    })
-
-    if (!video) {
-        return res.send("Video not found!")
-    }
-
-    return res.render("video", { item: video })
+    return res.render("faleconosco")
 })
 
 
