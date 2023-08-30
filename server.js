@@ -2,7 +2,6 @@ const express = require('express')
 const nunjucks = require('nunjucks')
 
 const server = express()
-const videos = require("./data")
 
 server.use(express.static('public'))
 
@@ -39,7 +38,13 @@ server.get("/multimidia", function(req,res) {
     return res.render("multimidia", { item: videos })
 })
 
-    return res.render("about", { about })
+server.get("/", function(req, res){
+    const about = {
+        img_glass: "_imagens/glass-quadro-homem-mulher.jpg",
+        video1: "_media/how-it-feels.mp4"
+    }
+
+    return res.render("index", { about })
 })
 
 server.get("/faleconosco", function(req, res){
